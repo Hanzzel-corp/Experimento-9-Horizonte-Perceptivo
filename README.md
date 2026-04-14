@@ -16,7 +16,56 @@ Ese “relleno” es el origen de la **ilusión del horizonte recto**, una compe
 
 ---
 
-## 🧩 Modelo del experimento
+## 📁 Estructura del Proyecto
+
+```bash
+9-ortogonalidad/
+├── docs/                           # Documentación detallada
+│   ├── README.md                   # Guía de documentación
+│   ├── Ortogonalidad_Percibido.md  # Doc del experimento base
+│   ├── Ortogonalidad_Percibido01.md # Doc versión animada
+│   ├── Experimento_9B.md           # Doc variante animada
+│   └── Experimento_9B02.md         # Doc versión con anotaciones
+├── Ortogonalidad_Percibido.py      # Experimento base (estático)
+├── Ortogonalidad_Percibido01.py    # Versión animada
+├── Experimento_9B.py               # Variante animada alternativa
+├── Experimento_9B02.py             # Versión con colormap coolwarm
+├── README.md                       # Este archivo
+└── LICENSE                         # Licencia MIT
+```
+
+---
+
+## 🚀 Instalación Rápida
+
+```bash
+# Clonar o navegar al directorio
+cd 9-ortogonalidad
+
+# Crear entorno virtual (opcional pero recomendado)
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+
+# Instalar dependencias
+pip install numpy matplotlib
+```
+
+---
+
+## 🎮 Uso
+
+Ejecuta cualquiera de los scripts:
+
+```bash
+python Ortogonalidad_Percibido.py      # Estático - para análisis detallado
+python Ortogonalidad_Percibido01.py    # Animado - rotación automática
+python Experimento_9B.py               # Animado - variante visual
+python Experimento_9B02.py             # Estático con anotaciones
+```
+
+---
+
+## 🧩 Modelo del Experimento
 
 - **Realidad física (azul):** una esfera que representa el espacio real.  
 - **Percepción humana (naranja):** el plano tangente del observador, que interpreta todo lo que ve como si fuera plano.  
@@ -24,55 +73,78 @@ Ese “relleno” es el origen de la **ilusión del horizonte recto**, una compe
 
 **Fórmula clave:**
 
-\[
+$$
 \Delta = |R\cos(\phi) - R|
-\]
+$$
+
+| Variable | Significado |
+|----------|-------------|
+| `R` | Radio de la esfera (mundo real) |
+| `φ` | Ángulo polar desde el observador |
+| `Δ` | Error perceptivo |
 
 - Cuando mirás cerca (φ pequeño), Δ ≈ 0 → el mundo parece plano.  
 - Cuando mirás lejos, Δ crece → tu mente empieza a inventar la recta.
 
 ---
 
-## ⚙️ Simulación visual
+## ⚙️ Simulaciones Disponibles
 
-El archivo [`horizonte_perceptivo.py`](horizonte_perceptivo.py) genera la siguiente escena:
+| Script | Tipo | Descripción |
+|--------|------|-------------|
+| `Ortogonalidad_Percibido.py` | Estático | Simulación base con visualización 3D fija. Ideal para análisis detallado del colapso de ortogonalidad. |
+| `Ortogonalidad_Percibido01.py` | Animado | Rotación automática de 360° con oscilación vertical. Permite comprender la geometría desde múltiples ángulos. |
+| `Experimento_9B.py` | Animado | Variante animada con diferentes parámetros de visualización y gradiente de colores 'plasma'. |
+| `Experimento_9B02.py` | Estático | Versión con colormap 'coolwarm' y anotaciones textuales explicativas en la escena 3D. |
 
-- Esfera azul = realidad.  
-- Plano naranja = percepción humana.  
-- Gradiente de color = **error perceptivo Δ**.  
-- Texto dinámico: “Zona donde el cerebro ya está inventando linealidad”.
+---
 
-El código utiliza `matplotlib` y `numpy`.  
-Se puede ejecutar directamente en entornos locales, Google Colab o VSCode.
+## 📖 Documentación
 
-```python
-python horizonte_perceptivo.py
-📸 Salida esperada:
+Cada script tiene documentación detallada en la carpeta `docs/`:
 
-Un hemisferio con gradiente azul–rojo y un plano anaranjado.
-El texto indica el punto donde la mente deja de percibir y empieza a completar.
+- [docs/Ortogonalidad_Percibido.md](docs/Ortogonalidad_Percibido.md) — Experimento base
+- [docs/Ortogonalidad_Percibido01.md](docs/Ortogonalidad_Percibido01.md) — Versión animada
+- [docs/Experimento_9B.md](docs/Experimento_9B.md) — Variante animada
+- [docs/Experimento_9B02.md](docs/Experimento_9B02.md) — Versión con anotaciones
 
-📊 Resultados
-En la zona azul, el ojo interpreta correctamente.
+---
 
-En la zona rojiza, la proyección sobre el plano deja de coincidir con la realidad.
+## 📊 Interpretación de Resultados
 
-Cuanto mayor es Δ, mayor es la invención lineal del cerebro.
+| Zona | Color | Interpretación |
+|------|-------|----------------|
+| Cercana | Azul | El ojo interpreta correctamente; Δ ≈ 0 |
+| Intermedia | Gradiente | Comienza el colapso perceptivo |
+| Lejana | Roja | Máxima invención lineal del cerebro |
 
-La mente humana no busca la verdad geométrica, sino la estabilidad perceptiva.
+La mente humana no busca la verdad geométrica, sino la **estabilidad perceptiva**.
 
-🔮 Conclusión visual
-El horizonte no es recto ni curvo, es una negociación entre lo que vemos y lo que podemos comprender.
+---
 
-La ortogonalidad es una herramienta cognitiva, no una propiedad universal.
+## 🔮 Conclusión Visual
 
-El universo no se adapta a nosotros; nosotros lo simplificamos para poder existir dentro de él.
+El horizonte no es recto ni curvo: es una **negociación** entre lo que vemos y lo que podemos comprender.
 
-🧭 Créditos
-Autor: José Zamora — Hanzzel Corp ∑Δ9
-Simulación y documentación colaborativa con GPT-5
-Basado en observación perceptiva y modelado geométrico euclidiano.
+- La **ortogonalidad** es una herramienta cognitiva, no una propiedad universal.
+- El **universo** no se adapta a nosotros; nosotros lo simplificamos para poder existir dentro de él.
 
-📡 Hashtags y etiquetas
-#HorizontePerceptivo #HanzzelCorp #Experimento9 #FísicaVisual #PercepciónHumana #Curvatura #Neurociencia #RealidadSimulada #CeroAbsoluto #Linealidad #CienciaVisual #NCT #FilosofíaDeLaPercepción
+---
 
+## 🧭 Créditos
+
+- **Autor:** José Zamora — Hanzzel Corp ∑Δ9
+- **Simulación y documentación:** Colaborativa con IA
+- **Base teórica:** Observación perceptiva y modelado geométrico euclidiano
+
+---
+
+## � Licencia
+
+Este proyecto está licenciado bajo la [MIT License](LICENSE).
+
+---
+
+## 📡 Hashtags
+
+#HorizontePerceptivo #HanzzelCorp #Experimento9 #FísicaVisual #PercepciónHumana #Curvatura #Neurociencia #RealidadSimulada #CeroAbsoluto #Linealidad #CienciaVisual #FilosofíaDeLaPercepción

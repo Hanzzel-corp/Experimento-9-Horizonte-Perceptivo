@@ -9,10 +9,10 @@
 Vivimos sobre una superficie curva, pero la percibimos plana.  
 Nuestros ojos solo captan unos pocos kilómetros del entorno; más allá, el cerebro pierde la resolución del horizonte y **rellena el vacío con linealidad**.  
 
-Ese “relleno” es el origen de la **ilusión del horizonte recto**, una compensación evolutiva que nos permite mantener estabilidad visual y orientación en un mundo curvo.  
+Ese “relleno” es el origen de la **ilusión del horizonte recto**, una interpretación geométrica/perceptiva que el experimento propone explorar; la explicación neurocognitiva requeriría evidencia independiente.  
 
 > 🧠 “El ojo no miente: el ojo completa.”  
-> El cerebro inventa una línea recta donde la realidad es curva.
+> La simulación representa cómo una proyección local puede percibirse aproximadamente plana aunque la superficie modelada sea curva.
 
 ---
 
@@ -118,7 +118,7 @@ Cada script tiene documentación detallada en la carpeta `docs/`:
 | Intermedia | Gradiente | Comienza el colapso perceptivo |
 | Lejana | Roja | Máxima invención lineal del cerebro |
 
-La mente humana no busca la verdad geométrica, sino la **estabilidad perceptiva**.
+La visualización ilustra una posible diferencia entre geometría global y representación local; no demuestra por sí sola una teoría general de la percepción humana.
 
 ---
 
@@ -148,3 +148,11 @@ Este proyecto está licenciado bajo la [MIT License](LICENSE).
 ## 📡 Hashtags
 
 #HorizontePerceptivo #HanzzelCorp #Experimento9 #FísicaVisual #PercepciónHumana #Curvatura #Neurociencia #RealidadSimulada #CeroAbsoluto #Linealidad #CienciaVisual #FilosofíaDeLaPercepción
+
+---
+
+## Dirección de investigación y autoría
+
+**José Zamora — Investigador principal independiente (Independent Principal Investigator), Hanzzel Corp.**
+
+Este repositorio es un proyecto individual del ecosistema Hanzzel Corp. Su pertenencia al ecosistema no implica integración técnica con NCT ni validación de resultados más allá de la evidencia documentada aquí.

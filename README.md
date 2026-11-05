@@ -40,7 +40,7 @@ Experimento-9-Horizonte-Perceptivo/
 
 ```bash
 # Clonar o navegar al directorio
-cd 9-ortogonalidad
+cd Experimento-9-Horizonte-Perceptivo
 
 # Crear entorno virtual (opcional pero recomendado)
 python -m venv .venv

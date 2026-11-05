@@ -19,7 +19,7 @@ Ese “relleno” es el origen de la **ilusión del horizonte recto**, una inter
 ## 📁 Estructura del Proyecto
 
 ```bash
-9-ortogonalidad/
+Experimento-9-Horizonte-Perceptivo/
 ├── docs/                           # Documentación detallada
 │   ├── README.md                   # Guía de documentación
 │   ├── Ortogonalidad_Percibido.md  # Doc del experimento base
